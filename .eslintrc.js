@@ -22,7 +22,12 @@ module.exports = {
   },
   plugins: ['prettier', 'import'],
   rules: {
-    'import/no-unresolved': 'error',
+    'import/no-unresolved': [
+      'error',
+      {
+        ignore: ['@env'],
+      },
+    ],
     'prettier/prettier': 'error',
     'no-unused-vars': ['error', { vars: 'all', args: 'after-used' }],
     'no-console': 'warn',
@@ -44,7 +49,6 @@ module.exports = {
     react: {
       version: 'detect',
     },
-    'import/ignore': ['@env'],
     'import/resolver': {
       node: {},
       'babel-module': {

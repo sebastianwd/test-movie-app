@@ -12,8 +12,6 @@ export const UserProvider = (props) => {
   const checkSavedUser = async () => {
     const savedUser = await storage.get(storageKeys.USER)
 
-    console.log('savedUse123r', savedUser)
-
     if (savedUser) {
       setUser(savedUser)
     }
@@ -25,8 +23,6 @@ export const UserProvider = (props) => {
 
   const saveUser = async (newUser) => {
     await storage.set(storageKeys.USER, newUser)
-
-    console.log('newUser', newUser)
 
     setUser(newUser)
   }

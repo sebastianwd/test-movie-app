@@ -2,11 +2,9 @@ import Axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { FlatList } from 'react-native'
 import { MOVIE_API_TOKEN } from '@env'
-import { MOVIE_API_URL, routes } from '~/utils/constants'
+import { CURRENT_YEAR, MOVIE_API_URL, routes } from '~/utils/constants'
 import styled from 'styled-components/native'
 import { Card } from '~/components'
-
-const year = new Date().getFullYear()
 
 const ListScreen = (props) => {
   const { navigation } = props
@@ -32,15 +30,11 @@ const ListScreen = (props) => {
   useEffect(() => {
     Axios.get(`${MOVIE_API_URL}`, {
       params: {
-        primary_release_year: year,
+        primary_release_year: CURRENT_YEAR,
         sort_by: 'popularity.desc',
         api_key: MOVIE_API_TOKEN,
       },
-    })
-      .then((res) => setItems(res.data.results))
-      .catch((err) => {
-        console.log(err)
-      })
+    }).then((res) => setItems(res.data.results))
   }, [])
 
   return (

@@ -13,6 +13,7 @@ const LoginScreen = () => {
     try {
       setUser(true)
     } catch (err) {
+      // eslint-disable-next-line no-console
       console.error(err)
     }
   }

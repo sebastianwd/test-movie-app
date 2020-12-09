@@ -1,0 +1,67 @@
+{
+  "name": "test-movie-app",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "start:nocache": "react-native start --reset-cache",
+    "clean:android": "cd android && gradlew clean && cd ../",
+    "test": "jest",
+    "lint": "eslint .",
+    "update": "ncu -i"
+  },
+  "resolutions": {
+    "styled-components": "^5"
+  },
+  "dependencies": {
+    "@emotion/stylis": "^0.8.5",
+    "@react-native-async-storage/async-storage": "^1.13.2",
+    "@react-native-community/masked-view": "^0.1.10",
+    "@react-navigation/native": "^5.8.10",
+    "@react-navigation/stack": "^5.12.8",
+    "axios": "^0.21.0",
+    "react": "16.13.1",
+    "react-native": "0.63.4",
+    "react-native-fast-image": "^8.3.4",
+    "react-native-gesture-handler": "^1.9.0",
+    "react-native-reanimated": "^1.13.2",
+    "react-native-safe-area-context": "^3.1.9",
+    "react-native-screens": "^2.15.0",
+    "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/runtime": "^7.8.4",
+    "@react-native-community/eslint-config": "^1.1.0",
+    "babel-jest": "^26.3.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "eslint": "^7.15.0",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-import-resolver-babel-module": "^5.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.2.0",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^4.3.5",
+    "jest": "^25.1.0",
+    "lint-staged": "^10.5.3",
+    "metro-react-native-babel-preset": "^0.64.0",
+    "prettier": "^2.2.1",
+    "react-native-dotenv": "^2.4.3",
+    "react-test-renderer": "16.13.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
+  }
+}

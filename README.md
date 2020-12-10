@@ -1,4 +1,6 @@
-This is a test movie app to practice React Native.
+This is a test movie app to practice React Native using [themoviedb api](https://www.themoviedb.org/)
+
+- This project uses eslint and react navigation 5
 
 ## Run this project
 
@@ -14,6 +16,8 @@ yarn install
 yarn run android
 ```
 
+Rename .env.example to .env
+
 ## Screenshots
 
 Mocks a login flow with React Navigation
@@ -27,7 +31,3 @@ Displays a list of movies released in the current year
 Tap the items to go to the details page of each movie.
 
 <img src="https://i.imgur.com/vv5pb5j.png)" alt="drawing" height="200"/>
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)

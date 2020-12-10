@@ -2,7 +2,7 @@ This is a test movie app to practice React Native.
 
 ## Run this project
 
-To run this project follow the [React Native environment setup ip](https://reactnative.dev/docs/environment-setup).
+To run this project follow the [React Native environment setup](https://reactnative.dev/docs/environment-setup).
 
 [Install Yarn](https://yarnpkg.com/).
 
@@ -18,15 +18,15 @@ yarn run android
 
 Mocks a login flow with React Navigation
 
-![1](https://i.imgur.com/l2xBlNp.png)
+<img src="https://i.imgur.com/l2xBlNp.png" alt="drawing" height="200"/>
 
 Displays a list of movies released in the current year
 
-![2](https://i.imgur.com/ORIwHJM.png)
+<img src="https://i.imgur.com/ORIwHJM.png" alt="drawing" height="200"/>
 
 Tap the items to go to the details page of each movie.
 
-![3](https://i.imgur.com/vv5pb5j.png)
+<img src="https://i.imgur.com/vv5pb5j.png)" alt="drawing" height="200"/>
 
 ## License
 
